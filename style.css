@@ -3,16 +3,34 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    overflow-x: hidden;
+}
 
 header {
     background-color: white;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.20));
+    width: 100%;
 }
 
 .conectados img{
     width:10rem;
     height: auto;
 }   
+
+.conectados a{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    border-radius: 4px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
 
 li {
     list-style: none;
@@ -86,18 +104,94 @@ a::before {
     margin-top: 70px;
 }
 
+.rectangle img{
+    position: relative;
+    top: 70px;
+    width: 90%;
+    height: auto;
+    left:3%;
+    transform: translateX(3%);
+}
+
+.saly img{
+    width: 40%;
+    height: auto;
+    position: relative;
+    top: -350px;
+    left: 43%;
+    transform: translateX(43%);
+
+}
+
+.middle{
+    position: relative;
+    left:-7%;
+    transform: translateX(-7%);
+    width: 100%;
+    height: auto;
+    top: -250px;
+}
+
+.nossos{
+    color: #004F98;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    left:3%;
+    transform: translateX(3%);
+    top: -180px;
+}
+
+.rectangle_2{
+    width: 530px;
+    height: 612px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: rgba(166, 166, 166, 0.40);
+    position: relative;
+    left:4.2%;
+    transform: translateX(4.2%);
+    top: -100px;
+
+}
+
+.rectangle_3{
+    width: 530px;
+    height: 612px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: rgba(166, 166, 166, 0.40);
+    position: relative;
+    bottom: 712px;
+    left:33.2%;
+    transform: translateX(33.2%);
+    
+}
+
+footer{
+    background-color: #004F98;
+    width: 100%;
+}
+
 @media(max-width:1600px){
     .container{
         width: 100%;
     }
-}
 
-
-@media(max-width:1600px){
-    .container{
-        width: 100%;
+    .saly img{
+        width: 40%;
+        height: auto;
+        position: relative;
+        top: -250px;
+        left: 43%;
+        transform: translateX(43%);
+    
     }
 }
+
 
 @media(max-width:1024px){
     .hamburger{
@@ -138,5 +232,15 @@ a::before {
 
     .nav-menu.active{
         left: 0;
+    }
+
+    .saly img{
+        width: 40%;
+        height: auto;
+        position: relative;
+        top: -150px;
+        left: 43%;
+        transform: translateX(43%);
+    
     }
 }
